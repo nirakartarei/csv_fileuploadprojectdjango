@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table style="border: 5px; color:green" >
+        <tr>
+        
+            <th>bank_name</th>
+            <th> ifsc</th>
+            <th>branch</th>
+            <th>address</th>
+            <th> contact</th>
+            <th> district</th>
+            <th> state</th>
+        </tr>
+    
+        {% for i in BO %}
+        <tr>
+       
+            <td>{{i.bank_name}}</td>
+            <td>{{i.ifsc}}</td>
+            <td>{{i.branch}}</td>
+            <td>{{i.address}}</td>
+            <td>{{i.contact}}</td>
+            <td>{{i.district}}</td>
+            <td>{{i.state}}</td>
+        {% endfor %}
+        </tr>
+    
+    </table>
+</body>
+</html>
